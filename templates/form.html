@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form action="/form/" method="post" novalidate>
+        {% csrf_token %}
+        <p>{{ obj.name.label }}{{ obj.name }}{{ obj.errors.name.0 }}</p>
+        <p>{{ obj.age.label }}{{ obj.age }}{{ obj.errors.age.0 }}</p>
+        <p>{{ obj.love.label }}{{ obj.love }}{{ obj.errors.love.0 }}</p>
+        <input type="submit" value="提交">
+    </form>
+</body>
+</html>
