@@ -142,9 +142,9 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>\nselect  \* from app01_book</find>
-      <find>select sum\(a\.price\) as price\,\* from app01_book a\nleft join app01_book_authors b\non a\.id\=b\.book_id\nleft join app01_author c\non b\.author_id \= c\.id\ngroup by c\.name</find>
-      <find>select \* from app01_book a\nleft join app01_book_authors b\non a\.id\=b\.book_id\nleft join app01_author c\non b\.author_id \= c\.id\ngroup by c\.name</find>
+      <find />
+      <find />
+      <find />
       <find>APPEND_SLASH</find>
       <find>dispatch</find>
       <find>req</find>
