@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form action="/mdlogin/" method="post" novalidate>
+        {% csrf_token %}
+        {{ obj.name.label }}{{ obj.name }}
+        {{ obj.pwd.label }}{{ obj.pwd }}
+        <input type="submit" value="提交">
+    </form>
+</body>
+</html>

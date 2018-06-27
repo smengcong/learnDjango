@@ -31,4 +31,6 @@ urlpatterns = [
     url(r'^loout',views.loout),
     url(r'^form',views2.form),
     url(r'^showData',views2.showData),
+    url(r'^mdindex/',views2.mdindex),
+    url(r'^mdlogin/',views2.mdlogin),
 ]

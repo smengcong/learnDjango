@@ -27,6 +27,10 @@ class Form(forms.Form):
         }
     )
 
+    pwd = fields.CharField(
+        label='密码',
+    )
+
     love = fields.IntegerField(
         widget=widgets.Select()
     )
