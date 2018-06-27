@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from django.conf.urls import url
+from django.conf.urls import url,include
 from app01 import views
 from app02 import views as views2
 
@@ -31,4 +31,7 @@ urlpatterns = [
     url(r'^loout',views.loout),
     url(r'^form',views2.form),
     url(r'^showData',views2.showData),
+    url(r'^mdindex/',views2.mdindex),
+    url(r'^mdlogin/',views2.mdlogin),
+    path('app03/',include('app03.urls')),
 ]
