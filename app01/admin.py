@@ -18,6 +18,6 @@ class BookAdmin(admin.ModelAdmin):
     # 按指定字段过滤
     list_filter = ('pub_date','publish')
 
-admin.site.register(Author)
-admin.site.register(Book,BookAdmin)
-admin.site.register(Publish)
+# admin.site.register(Author)
+# admin.site.register(Book,BookAdmin)
+# admin.site.register(Publish)
