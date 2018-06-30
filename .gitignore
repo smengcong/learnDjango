@@ -1,1 +1,8 @@
 .idea/
+Django_Orm/__pycache__/
+Middle/__pycache__/
+app01/__pycache__/
+app02/__pycache__/
+app02/migrations/
+app03/__pycache__/
+app03/migrations/__pycache__/
