@@ -12,3 +12,12 @@ def index(request):
             f.write(line)
         f.close()
         return HttpResponse("上传成功")
+
+def ajaxframe(request):
+    if request.method=='GET':
+        return render(request,'ajaxframe.html')
+    else:
+        print(request.GET)
+        print(request.POST)
+        print(request.FILES)
+        return HttpResponse("....")

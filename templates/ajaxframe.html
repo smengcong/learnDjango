@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script src="/static/js/jquery.min.js"></script>
+    <iframe id="testiframe" name="testiframe"></iframe>
+    <form action="/app03/ajaxframe/" method="post" target="testiframe" id="my_form">
+        <input type="text" name="aa"/>
+        <button id="btn" onclick="btn_click()">提交</button>
+    </form>
+    <script>
+        $(function () {
+        })
+        
+        function btn_click() {
+            $('#testiframe').ready(function () {
+                var t = $(this).contents().find('body').text();
+                console.log(t)
+            })
+
+            $('#my_form').submit();
+        }
+    </script>
+</body>
+</html>
