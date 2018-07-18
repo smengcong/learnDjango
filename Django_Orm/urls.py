@@ -34,4 +34,5 @@ urlpatterns = [
     url(r'^mdindex/',views2.mdindex),
     url(r'^mdlogin/',views2.mdlogin),
     path('app03/',include('app03.urls')),
+    path('video/',include('video.url')),
 ]

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .content .block{
+            border: #609ab6;
+            color: #a05f5f;
+            font-size: 20px;
+            margin: 20px;
+        }
+
+        .active{
+            background-color: #3bb3c163;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+    {% for level in level_list %}
+        {% if level.id == kwargs.level_id %}
+            <a class="block active">{{ level.title }}</a>
+        {% else %}
+            <a class="block">{{ level.title }}</a>
+        {% endif %}
+    {% endfor %}
+    </div>
+    <div class="content">
+    {% for type in type_list %}
+        {% if type.id == kwargs.type_id %}
+            <a class="block active">{{ type.name }}</a>
+        {% else %}
+            <a class="block">{{ type.name }}</a>
+        {% endif %}
+    {% endfor %}
+    </div>
+    <div class="content">
+    {% for direction in direction_list %}
+        {% if direction.id == kwargs.direction_id %}
+            <a class="block active">{{ direction.name }}</a>
+        {% else %}
+            <a class="block">{{ direction.name }}</a>
+        {% endif %}
+    {% endfor %}
+    </div>
+</body>
+</html>
